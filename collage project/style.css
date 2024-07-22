@@ -1,0 +1,267 @@
+*{
+    margin:0;
+    font-family:Arial ;
+    border : border-box;
+}
+.navbar{
+    height :60px;
+    background-color :#0f1111;
+    color :white ;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-logo{
+    height: 50px;
+    width : 100px;
+
+}
+
+.logo{
+    background-image:url(WhatsApp\ Image\ 2024-05-11\ at\ 01.31.34_71cd9dd2.jpg);
+    background-size: cover;
+    height :50px;
+    width: 100px;
+}
+.border{
+    border :1.5px solid transparent;
+}
+
+.border:hover {
+    border : 1.5px solid white ;
+}
+
+/** box2 **/
+ .add-first{
+    color:#cccccc;
+    font-size: 0.85rem;
+    margin-left: 15px;
+
+ }
+
+ .add-second{
+    font-size: 1rem;
+    margin-left: 15px;
+
+ }
+ .add-icon{
+    display: flex;
+    align-items: center;
+ }
+
+ /*box3*/
+ .nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    background-color :pink;
+    width : 620px;
+    height:40px;
+    border-radius : 4px;
+ }
+
+ .search-select{
+    background-color:#f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius : 4px;
+    border-bottom-left-radius : 4px;
+    border: none;
+
+ }
+
+ .search-input{
+    width: 100%;
+    font-size : 1rem;
+    border :none;
+
+
+ }
+
+ .search-icon{
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: rgb(241, 241, 10);
+    border-top-right-radius : 4px;
+    border-bottom-right-radius : 4px;
+
+ }
+ .nav-search:hover {
+    border :2px solid orange;
+
+ }
+ /**box 4 **/
+
+ span{
+    font-size: 0.7rem;
+ }
+ .nav-second{
+    font-size: 0.85rem;
+    font-weight: 700;
+ }  
+  
+ /** box 6 **/
+
+ .nav-cart i{
+    font-size :30px;
+
+ }
+ .nav-cart{
+    font-size: 0.85rem;
+ }
+
+ /** panels **/
+
+ .panel{
+    height: 40px;
+    background-color: #222f3d;
+    display : flex;
+    color : white;
+    align-items: center;
+    justify-content: space-evenly;
+ }
+
+ .panel-ops p{
+    display : inline;
+ }
+
+ .panel-ops{
+    width: 70%;
+    font-size: 0.85rem;
+    margin-left: 10px;;
+ }
+
+ .panel_deals{
+    font-size:0.9rem;
+    font-weight:700;
+
+ }
+
+ /** hero-section **/
+
+ .hero-section{
+    background-image: url(https://www.chanakyadairy.com/wp-content/uploads/2019/04/blog-pic.jpg);
+    background-size: cover;
+    height: 400px;
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+
+ }
+
+ .hero-msg{
+    background-color: white;
+    color: black;
+    height : 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    bottom: 225px;
+    width:80% ;
+    margin-bottom: 25px;
+ }
+
+ .hero-msg a{
+    color: #007185;
+
+
+ }
+
+ /*shop-section*/
+  .shop-section{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+  }
+ .box{
+    border : 2px solid black;
+    height: 400px;
+    width : 24%;
+    background-color: white;
+    padding: 20px 0px 15px;
+     margin-top: 15px;
+
+ }
+
+ body {
+   margin: 0;
+   padding: 0;
+   font-family: Arial, sans-serif;
+ }
+ 
+ footer {
+   background-color: #333;
+   color: #fff;
+   padding: 40px 0;
+ }
+ 
+ .container {
+   display: flex;
+   justify-content: space-between;
+   max-width: 1200px;
+   margin: 0 auto;
+ }
+ 
+ .container h3 {
+   color: #fff;
+ }
+ 
+ .footer-left,
+ .footer-center,
+ .footer-right {
+   flex: 1;
+ }
+ 
+ .footer-center {
+   text-align: center;
+ }
+ 
+ .footer-right {
+   text-align: right;
+ }
+ 
+ .social-icons {
+   margin-top: 10px;
+ }
+ 
+ .social-icons a {
+   margin-right: 10px;
+ }
+ 
+ .social-icons img {
+   width: 30px;
+   height: 30px;
+ }
+ 
+
+.box-img{
+    height: 300px;
+    background-size: contain;
+    margin-top:1rem;
+    margin-bottom: 1rem;
+
+}
+
+.box-content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+}
+
+/** footer**/
+footer{
+   margin-top: 15px;
+}
+.foot-panel1{
+   background-color: #37475a;
+   color:white;
+   height:50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 0.5rem;
+}

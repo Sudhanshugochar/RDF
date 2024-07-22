@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RDF</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+         .order{
+        
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+   .order:hover {
+        background-color: #45a049;}
+
+        .all{
+             
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+
+        }
+        .all:hover {
+        background-color: #45a049;}
+
+        .new{
+            background-color: #d5cf12;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+        }
+        .new:hover {
+        background-color: #03ddff;}
+
+        .bro{
+            background-color: #f3880e;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+        }
+        .bro:hover {
+        background-color: #be0c0c;}
+
+        .cool{
+            background-color: #f3880e;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+        }
+        .cool:hover {
+        background-color: #df840d;}
+
+        .cart{
+            background-color: #df840d;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+        }
+        .cart:hover {
+        background-color: #be0c0c;}
+
+        .all{
+            background-color: #3dae5c;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+        }
+
+        .all:hover {
+            background-color: #57dc1e;}
+
+
+            .cool{
+            background-color:#df840d;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+        }
+
+        .cool:hover {
+            background-color: #be0c0c;}
+
+            
+            .new{
+            background-color:#e4cb0f;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+        }
+
+        .new:hover {
+            background-color: #1c0cc9;}
+ 
+ 
+            .plane {
+  position: absolute;
+  top: 50%;
+  left: -100px; /* Initial position off-screen */
+  width: 150px;
+  height: auto;
+  animation: fly 10s linear infinite; /* Adjust the duration as needed */
+}
+
+@keyframes fly {
+  0% {
+    transform: translateX(-100px) translateY(-50%);
+  }
+  100% {
+    transform: translateX(calc(100% + 100px)) translateY(-50%);
+  }
+}
+ 
+body, html {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+    }
+    
+  
+
+
+    </style>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+        <div class="nav-logo border">
+            <div class="logo"></div>
+        </div>
+        <div class="nav-adress border">
+            <p class="add-first">Deliver to</p>
+            <img src="milk2-removebg-preview.png"Plane" class="plane">
+            <div class="add-icon">
+                <i class="fa-solid fa-location-dot"></i>
+               
+                <a class="new" href="mumbai.html">Mumbai</a>
+            </div>
+        </div>
+        
+    
+        <div class="nav-search">
+            <select class="search-select">
+                <option>All</option>
+            </select>
+            <input placeholder="search RDF" class="search-input">
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <div class="nav-signin border">
+            <p><span></span></p>
+            <a class="bro" href="signin.html">sign in</a>
+            <p class="nav-second">Account & lists</p>
+        </div>
+        
+
+        <div class="nav-return border">
+            <p><span> </span></p>
+            <p class="nav-second"></p>
+            <a class="cool" href="aboutus.html"> About Us</a>
+        </div>
+
+        <div class="nav-cart border">
+            <i class="fa-solid fa-cart-shopping"></i>
+            
+            <a class="cart" href="cart.html"> cart</a>
+        </div>
+
+    </div>
+    <div class="panel">
+        <div class="panel-all">
+            <i class="fa-solid fa-bars"></i>
+            All
+        </div>
+        <div class="panel-ops">
+          
+            <a class="all" href="todaysdeal.html">Today's Deals</a>
+            <a class="all" href="customerserivce.html">Customer Service</a>
+            <a class="all" href="giftcard.html"> Gift cards</a>
+
+           
+            
+        </div>
+        <div class="panel-Deals">
+            Shop Deals on dairy products
+        </div>
+    </div>
+    <div class="hero-section">
+        <div class="hero-msg">
+            <p> Fast and Furious 30 Minutes Delivery</p>
+        </div>
+      </div>
+        
+      <div class="shop-section">
+        <div class="box1 box">
+            <div class="box-content">
+                <h2>MILK</h2>
+            <div class="box-img" style="background-image: url('https://img.etimg.com/photo/94420055/94420055.jpg');"></div>
+            <button> <a href="milk.html"> Order</a></button>
+
+            <h1> PRICE:-299</h1>
+            </div>
+        </div>
+        <div class="box2 box">
+            <div class="box-content">
+                <h2>CURD</h2>
+            <div class="box-img" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzRvU7FMmvqHoLEkCGq_G9kXkKkwPKAUdR4A&usqp=CAU');"></div>
+            <button> <a href="curd.html"> Order</a></button>
+            <h1> PRICE:-299</h1>
+
+            
+
+            
+
+            </div>
+        </div>
+        <div class="box3 box">
+            <div class="box-content">
+                <h2>CREAM</h2>
+            <div class="box-img" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo8xDcO6KmQ02-U_MIq9aS-4SBgNl-tzAZh2-wAhQ7E_Lr87LPQo5kast-1YP_37DCM0A&usqp=CAU');"></div>
+            <button> <a href="cream.html"> Order</a></button>
+            <h1> PRICE:-299</h1>
+            </div>
+        </div>
+        <div class="box4 box">
+            <div class="box-content">
+                <h2>COTTAGE CHEESE</h2>
+            <div class="box-img" style="background-image: url('https://5.imimg.com/data5/SELLER/Default/2021/3/DZ/YN/HD/115333162/malai-paneer-717-jpg-500x500.jpg');"></div>
+            <button> <a href="chees.html"> Order</a></button>
+            <h1> PRICE:-299</h1>
+          
+        </div>
+      </div>
+      
+  </div>
+    
+  <div class="shop-section">
+    <div class="box5 box">
+        <div class="box-content">
+            <h2>BUTTER</h2>
+        <div class="box-img" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAJCQNvXJAGv1qkQaKmYzE4RXek-mtD5FLVs2kOFUIYUdgOFqFMQRuxH3zYsLGU4C0OG4&usqp=CAU');"></div>
+        <button> <a href="butter.html"> Order</a></button>
+        <h1> PRICE:-299</h1>
+        </div>
+    </div>
+    <div class="box6 box">
+        <div class="box-content">
+            <h2>GHEE</h2>
+        <div class="box-img" style="background-image: url('https://i.pinimg.com/736x/2b/14/81/2b1481988e6734445409933ef693e80b.jpg');"></div>
+        <button> <a href="GHEE.html"> Order</a></button>
+        <h1> PRICE:-299</h1>
+        </div>
+    </div>
+    <div class="box7 box">
+        <div class="box-content">
+            <h2>SHRIKHAND</h2>
+        <div class="box-img" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUKIDsChP-TuGk45Ne5OyWPv0_LAWNVob6g_XowWAuE2jREtxzGmQd8ao0uexJLhL29fs&usqp=CAU');"></div>
+        <button> <a href="shrikhand.html"> Order</a></button>
+        <h1> PRICE:-299</h1>
+        </div>
+    </div>
+    <div class="box8 box">
+        <div class="box-content">
+            <h2>BUTTER MILK</h2>
+        <div class="box-img" style="background-image: url('https://www.cookwithmanali.com/wp-content/uploads/2021/06/Sweet-Lassi-676x1024.jpg');"></div>
+        <button> <a href="buttermilk.html"> Order</a></button>
+        <h1> PRICE:-299</h1>
+      
+    </div>
+  </div>
+
+  </header>
+  <footer>
+
+
+<footer>
+  <div class="container">
+    <div class="footer-left">
+      <h3>About Us</h3>
+      <p> <p>We are passionate about bringing you the highest quality dairy products. Our journey began 2004.</p>
+      <p>Today, the best diets to produce rich, creamy milk.  dairy products, including milk, cheese, yogurt, butter, and more.</p>
+      <p>At the heart of our business is a dedication to excellence in every aspect of what we do. We strive to maintain the highest standards of hygiene, freshness, and flavor, ensuring that each product that bears our name is a testament to our commitment to quality.</p>
+      <p>Thank you for choosing our dairy products. We invite you to explore our site and discover the wholesome goodness that awaits you with every bite and sip.</p>
+
+    </div>
+    <div class="footer-center">
+      <h3>Contact Us</h3>
+      <p>Email:RDF@Gmail.com </p>
+      <p>Phone: 123-456-7890</p>
+    </div>
+    <div class="footer-right">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"></a>
+        <a href="#"><img src="https://seeklogo.com/images/T/twitter-icon-square-logo-108D17D373-seeklogo.com.png" alt="Twitter"></a>
+        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/800px-Instagram_icon.png" alt="Instagram"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
+
+
+
+    <div class="foot-panel1">
+        Back to top
+    </div>
+
+ 
+  <a href = "signin.html"></a>
+ 
+</body>
+</html>
